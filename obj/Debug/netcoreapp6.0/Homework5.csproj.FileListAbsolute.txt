@@ -1,0 +1,5 @@
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.csproj.AssemblyReference.cache
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.AssemblyInfoInputs.cache
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.AssemblyInfo.cs
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.csproj.CoreCompileInputs.cache

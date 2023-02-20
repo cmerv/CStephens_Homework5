@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/2315-homework5/main.csproj",
-      "projectName": "main",
-      "projectPath": "/home/runner/2315-homework5/main.csproj",
+      "projectUniqueName": "/home/runner/2315-homework5/Homework5.csproj",
+      "projectName": "Homework5",
+      "projectPath": "/home/runner/2315-homework5/Homework5.csproj",
       "packagesPath": "/home/runner/.nuget/packages/",
       "outputPath": "/home/runner/2315-homework5/obj/",
       "projectStyle": "PackageReference",
