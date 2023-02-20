@@ -166,7 +166,6 @@ class Homework5
         int birthYear = Convert.ToInt16(Console.ReadLine());
         if (birthYear >= 1900 && birthYear <= 2023)
         {
-			birthdatecheck:
             bool isOfAge = checkAge(birthYear);
             if (isOfAge == true){
                 if (userPass == userPass2)
@@ -186,7 +185,6 @@ class Homework5
         else
         {
             Console.WriteLine("You have input an invalid birth year.");
-			goto birthdatecheck;
         }
     }
 }
