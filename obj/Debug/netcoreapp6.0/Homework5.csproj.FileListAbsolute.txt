@@ -3,3 +3,13 @@
 /home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.AssemblyInfoInputs.cache
 /home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.AssemblyInfo.cs
 /home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.csproj.CoreCompileInputs.cache
+/home/runner/2315-homework5/bin/Debug/netcoreapp6.0/Homework5
+/home/runner/2315-homework5/bin/Debug/netcoreapp6.0/Homework5.deps.json
+/home/runner/2315-homework5/bin/Debug/netcoreapp6.0/Homework5.runtimeconfig.json
+/home/runner/2315-homework5/bin/Debug/netcoreapp6.0/Homework5.dll
+/home/runner/2315-homework5/bin/Debug/netcoreapp6.0/Homework5.pdb
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.dll
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/refint/Homework5.dll
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.pdb
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/Homework5.genruntimeconfig.cache
+/home/runner/2315-homework5/obj/Debug/netcoreapp6.0/ref/Homework5.dll

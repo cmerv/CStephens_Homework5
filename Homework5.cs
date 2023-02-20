@@ -1,4 +1,5 @@
-namespace CStephens_Homework5;
+using System;
+
 class Homework5
 {
     static void Main(string[] args)
@@ -30,16 +31,16 @@ class Homework5
             case "greaterthan-4int":
                 Console.WriteLine("4 Number Greater Than Program...");
                 Console.WriteLine("Type an integer for integer A:");
-                int intA = Convert.ToInt16(Console.ReadLine());
+                int intA_2 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Type an integer or integer B:");
-                int intB = Convert.ToInt16(Console.ReadLine());
+                int intB_2 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Type an integer or integer C:");
-                int intC = Convert.ToInt16(Console.ReadLine());
+                int intC = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Type an integer or integer D:");
-                int intD = Convert.ToInt16(Console.ReadLine());
-                Console.WriteLine($"A = {intA}, B = {intB}, C = {intC}, D= {intD}");
-        
-                GreaterThan(intA, intB, intC, intD);
+                int intD = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"A = {intA_2}, B = {intB_2}, C = {intC}, D = {intD}");
+
+                GreaterThan(intA_2, intB_2, intC, intD);
                 break;
 
             case "accountcreation":
@@ -60,81 +61,82 @@ class Homework5
                 Console.Write($"The greater number is {gtIntB}");
                 break;
         }
-        static void GreaterThan(int gtIntA, int gtIntB, int gtIntC, int gtIntD)
-        {
-            bool gtResultAB = gtIntA > gtIntB;
-            bool gtResultAC = gtIntA > gtIntC;
-            bool gtResultAD = gtIntA > gtIntD;
-            bool gtResultBC = gtIntB > gtIntC;
-            bool gtResultBD = gtIntB > gtIntD;
-            bool gtResultCD = gtIntC > gtIntD;
-            switch (gtResultAB)
-            { // Tier 1
-                case true: // A > B 
-                    switch (gtResultAC)
-                    { // Tier 2
-                        case true: // A > C
-                            switch (gtResultAD)
-                            { // Tier 3
-                                case true: // A is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntA}");
-                                    break;
-                                case false: // D is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntD}");
-                                    break;
-                            }
-						break;
-                        case false: // C > A
-                            switch (gtResultCD)
-                            { // Tier 3
-                                case true: // C is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntC}");
-                                    break;
-                                case false: // D is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntD}");
-                                    break;
+    }
+    static void GreaterThan(int gtIntA, int gtIntB, int gtIntC, int gtIntD)
+    {
+        bool gtResultAB = gtIntA > gtIntB;
+        bool gtResultAC = gtIntA > gtIntC;
+        bool gtResultAD = gtIntA > gtIntD;
+        bool gtResultBC = gtIntB > gtIntC;
+        bool gtResultBD = gtIntB > gtIntD;
+        bool gtResultCD = gtIntC > gtIntD;
+        switch (gtResultAB)
+        { // Tier 1
+            case true: // A > B 
+                switch (gtResultAC)
+                { // Tier 2
+                    case true: // A > C
+                        switch (gtResultAD)
+                        { // Tier 3
+                            case true: // A is the largest number
+                                Console.WriteLine($"The greater number is {gtIntA}");
+                                break;
+                            case false: // D is the largest number
+                                Console.WriteLine($"The greater number is {gtIntD}");
+                                break;
+                        }
+                        break;
+                    case false: // C > A
+                        switch (gtResultCD)
+                        { // Tier 3
+                            case true: // C is the largest number
+                                Console.WriteLine($"The greater number is {gtIntC}");
+                                break;
+                            case false: // D is the largest number
+                                Console.WriteLine($"The greater number is {gtIntD}");
+                                break;
 
-                            }
-						break;
-                    }
-				break;
-                case false: // B > A
-                    switch (gtResultBC)
-                    { // Tier 2
-                        case true: // B > C
-                            switch (gtResultBD)
-                            { // Tier 3
-                                case true: // B is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntB}");
-                                    break;
+                        }
+                        break;
+                }
+                break;
+            case false: // B > A
+                switch (gtResultBC)
+                { // Tier 2
+                    case true: // B > C
+                        switch (gtResultBD)
+                        { // Tier 3
+                            case true: // B is the largest number
+                                Console.WriteLine($"The greater number is {gtIntB}");
+                                break;
 
-                                case false: // D is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntD}");
-                                    break;
-
-
-						
-                            }
-						break;
-					case false: // C > B
-                   		 switch (gtResultCD)
-                            { // Tier 3
-                                case true: // C is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntC}");
-                                    break;
-
-                                case false: // D is the largest number
-                                    Console.WriteLine($"The greater number is {gtIntD}");
-                                    break;
+                            case false: // D is the largest number
+                                Console.WriteLine($"The greater number is {gtIntD}");
+                                break;
 
 
 
-                            } 
-					break;
-                    } break;
-            }
+                        }
+                        break;
+                    case false: // C > B
+                        switch (gtResultCD)
+                        { // Tier 3
+                            case true: // C is the largest number
+                                Console.WriteLine($"The greater number is {gtIntC}");
+                                break;
+
+                            case false: // D is the largest number
+                                Console.WriteLine($"The greater number is {gtIntD}");
+                                break;
 
 
-     }
-	}
+
+                        }
+                        break;
+                }
+                break;
+        }
+
+
+    }
 }
