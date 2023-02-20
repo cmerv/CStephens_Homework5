@@ -44,6 +44,8 @@ class Homework5
                 break;
 
             case "accountcreation":
+				Console.WriteLine("Account Creation Program...");
+				createAccount();
                 break;
         }
 
@@ -139,4 +141,47 @@ class Homework5
 
 
     }
+	static bool checkAge(int birthYear){
+		if (birthYear>=18){
+			return true;
+			}
+			else{
+			return false;
+			}
+		} 
+	static void createAccount(){
+		Console.WriteLine("Please input a username:");
+		string userName = Console.ReadLine();
+		passwordinput:
+		Console.WriteLine("Please input a password:");
+		string userPass = Console.ReadLine();
+		Console.WriteLine("Please input the password again to confirm:");
+		string userPass2 = Console.ReadLine();
+		if (userPass==userPass2){
+			continue;
+				}
+			else {
+				Console.WriteLine("Your password confirmation did not match your password.");
+				goto passwordinput;
+			}
+			
+		}
+			
+		}
+		Console.WriteLine("Type a birth year from 1900 to 2023.");
+		int birthYear = Convert.ToInt16(Console.ReadLine());
+		if (birthYear>=1900&&birthYear<=2023){
+			bool isOfAge = checkAge(birthYear);
+			if (isOfAge==true) {
+			Console.WriteLine("Account is created successfully.");
+			}
+			else {
+			Console.WriteLine("Could not create an account");
+			}
+		}
+		else {
+		Console.WriteLine("You have input an invalid birth year.");	
+		}
+		
+	}
 }
