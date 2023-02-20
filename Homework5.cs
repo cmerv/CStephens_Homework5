@@ -143,7 +143,7 @@ class Homework5
     }
     static bool checkAge(int birthYear)
     {
-        if (birthYear-2023 >= 18) // if we are 18+ then we can keep going
+        if (2023-birthYear >= 18) // if we are 18+ then we can keep going
         {
             return true;
         }
