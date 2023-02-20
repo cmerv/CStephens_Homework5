@@ -143,7 +143,7 @@ class Homework5
     }
     static bool checkAge(int birthYear)
     {
-        if (birthYear >= 18) // if we are 18+ then we can keep going
+        if (birthYear-2023 >= 18) // if we are 18+ then we can keep going
         {
             return true;
         }
@@ -156,7 +156,7 @@ class Homework5
     {
         Console.WriteLine("Please input a username:");
         string userName = Console.ReadLine();
-    passwordinput:
+    	passwordinput: // label to return to
         Console.WriteLine("Please input a password:");
         string userPass = Console.ReadLine();
         Console.WriteLine("Please input the password again to confirm:");
@@ -168,23 +168,24 @@ class Homework5
         {
             bool isOfAge = checkAge(birthYear);
             if (isOfAge == true){
-                if (userPass == userPass2)
+                if (userPass == userPass2) // check to make sure our passwords are equal
                 {
                 Console.WriteLine("Account is created successfully.");
 				}
 				else {
                     Console.WriteLine("Your password confirmation did not match your password.");
-                    goto passwordinput; // repeat password input process.
+                    goto passwordinput; // repeat password input process if failed.
                 }
 			}
             else
             {
-                Console.WriteLine("Could not create an account");
+                Console.WriteLine("Could not create an account.");
             }
         }
         else
         {
             Console.WriteLine("You have input an invalid birth year.");
+			goto passwordinput; 
         }
     }
 }
