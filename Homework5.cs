@@ -50,21 +50,21 @@ class Homework5
         }
 
     }
-    static void GreaterThan(int gtIntA, int gtIntB)
-    {
-        bool gtResult = gtIntA > gtIntB;
-        switch (gtResult)
-        {
-            case true:
-                Console.WriteLine($"The greater number is {gtIntA}");
-                break;
+    // static void GreaterThan(int gtIntA, int gtIntB)
+    // {
+    //     bool gtResult = gtIntA > gtIntB;
+    //     switch (gtResult)
+    //     {
+    //         case true:
+    //             Console.WriteLine($"The greater number is {gtIntA}");
+    //             break;
 
-            case false:
-                Console.Write($"The greater number is {gtIntB}");
-                break;
-        }
-    }
-    static void GreaterThan(int gtIntA, int gtIntB, int gtIntC, int gtIntD)
+    //         case false:
+    //             Console.Write($"The greater number is {gtIntB}");
+    //             break;
+    //     }
+    // }
+    static void GreaterThan(int gtIntA, int gtIntB, int gtIntC = 0, int gtIntD = 0)
     {
         bool gtResultAB = gtIntA > gtIntB;
         bool gtResultAC = gtIntA > gtIntC;
