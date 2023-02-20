@@ -9,7 +9,7 @@ class Homework5
         Console.WriteLine("greaterthan-2int");
         Console.WriteLine("greaterthan-4int");
         Console.WriteLine("accountcreation");
-        string? selection = Console.ReadLine();
+        string selection = Console.ReadLine();
         //
         switch (selection?.ToLower())
         {
@@ -143,7 +143,7 @@ class Homework5
     }
     static bool checkAge(int birthYear)
     {
-        if (birthYear >= 18)
+        if (birthYear >= 18) // if we are 18+ then we can keep going
         {
             return true;
         }
@@ -162,10 +162,11 @@ class Homework5
         Console.WriteLine("Please input the password again to confirm:");
         string userPass2 = Console.ReadLine();
 
-        Console.WriteLine("Type a birth year from 1900 to 2023.");
+        Console.WriteLine("Input a birth year from 1900 to 2023:");
         int birthYear = Convert.ToInt16(Console.ReadLine());
         if (birthYear >= 1900 && birthYear <= 2023)
         {
+			birthdatecheck:
             bool isOfAge = checkAge(birthYear);
             if (isOfAge == true){
                 if (userPass == userPass2)
@@ -174,7 +175,7 @@ class Homework5
 				}
 				else {
                     Console.WriteLine("Your password confirmation did not match your password.");
-                    goto passwordinput;
+                    goto passwordinput; // repeat password input process.
                 }
 			}
             else
@@ -185,6 +186,7 @@ class Homework5
         else
         {
             Console.WriteLine("You have input an invalid birth year.");
+			goto birthdatecheck;
         }
     }
 }
