@@ -162,7 +162,7 @@ class Homework5
         Console.WriteLine("Please input the password again to confirm:");
         string userPass2 = Console.ReadLine();
 
-        Console.WriteLine("Input a birth year from 1900 to 2023:");
+        Console.WriteLine("Input a birth year between 1900 to 2023:");
         int birthYear = Convert.ToInt16(Console.ReadLine());
         if (birthYear >= 1900 && birthYear <= 2023)
         {
